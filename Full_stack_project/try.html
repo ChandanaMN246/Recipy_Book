@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="try.css" type="style/CSS">
+  <title>Recipe Book</title>
+  <style>
+    @import url("try.css");
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Chanshavs's Recipe Book</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="page2.html">Add Recipes</a></li>
+      <li><a href="Recipe.html">Recipes</a></li>
+      <li><a href="categories.html">Categories</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>So, what are we preparing today</h2>
+    </section>
+    <img id="myImage" src="imgs/img1.jpg" alt="imgs">
+  </main>
+
+  <footer>
+    <p>© Chanshavs's Recipe Book. All rights reserved.</p>
+  </footer>
+  <script>
+    function changeImage() {
+      var image = document.getElementById("myImage");
+      var images = ["imgs/img1.jpg", "imgs/img2.jpg", "imgs/img3.jpg", "imgs/img4.jpg", "imgs/img5.jpg", "imgs/img6.jpg", "imgs/img7.jpg", "imgs/img8.jpg", "imgs/img9.jpg", "imgs/img10.jpg", "imgs/img11.jpg", "imgs/img12.jpg", "imgs/img13.jpg", "imgs/img14.jpg", "imgs/img15.jpg", "imgs/img16.jpg"];
+      var currentIndex = 0;
+      
+      setInterval(function() {
+        image.src = images[currentIndex];
+        currentIndex = (currentIndex + 1) % images.length;
+      }, 1000);
+    }
+    window.onload = changeImage;
+    </script>
+</body>
+</html>
