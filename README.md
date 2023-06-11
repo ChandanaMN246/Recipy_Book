@@ -1,4 +1,4 @@
-# Recipy_Book
+# Recipe_Book
 
 The Recipe Book project is a web application developed using HTML, CSS, Bootstrap, and JavaScript. It provides a platform for users to explore, add, search, and delete recipes. The website consists of several pages with distinct functionalities, aimed at enhancing the user's experience and providing easy access to a variety of recipes.
 We mainly have 6 pages in our project. Which are as follows:
